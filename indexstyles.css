@@ -457,10 +457,9 @@
 .wrapper .SubTitle3 .PicOfMods img{
   border: gray solid 5px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .wrapper .SubTitle3 .buttonGroupA-1{
