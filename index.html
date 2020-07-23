@@ -136,13 +136,15 @@
             <div class="Mod2Part" id="Mod2Part">
               <p style="font-size: 24px; font-weight: bold;">自動聲光模組</p>
               <p>警報聲和音樂是來自<span style="color:red">蜂鳴器</span>，分為有源和無源兩種，我們的擴展板用的是<span style="color:red">有源蜂鳴器</span>，內部帶震盪源，所以只要<span style="color:red">一通電就會發聲</span>。</p>
+              <p>我們設計有源蜂鳴器設定為<span style="color:red">每一秒內打開蜂鳴器，50 ms 後關閉蜂鳴器</span>，就持續維持發聲可以<span style="color:red">讓視障者聽見警報聲響</span>。</p>
               <button class="btn buttonGroupA-1" onclick="mod2A_Show(this)">自動發出閃燈信號</button>
               <button class="btn buttonGroupA-1" onclick="mod2B_Show(this)">語音訊息自動發出</button>
               <button class="btn buttonGroupA-1" onclick="mod2C_Show(this)">播放音樂提醒</button>
               <div class="card card-outline mod2 mod2A" style="display:none">
                 <div class="card-header">自動發出閃燈信號</div>
                 <div class="card-body">
-                  <span style="color:red"></span>
+                  <p>為<span style="color:red">提醒病人</span>送藥時間已到，並準備拿藥，系統安裝LED燈，以營造酷炫的燈光特效</p>
+                  <p>LED燈發出的光亮可以讓聽障者看見有<span style="color:red">警示作用</span>。</p>
                   <button class="btn buttonGroupA-1" onclick="mod2Aa_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod2Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
