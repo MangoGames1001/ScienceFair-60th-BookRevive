@@ -82,6 +82,9 @@
                 <li>具有遠端監控與自動通報家屬的功能</li>
                 <li>能進行紫外線消毒作業避免醫護人員被傳染</li>
               </ol>
+              <P><span style="font-weight: bold;">操作流程：</span>設計每天固定的時間，啟動機器人行動模組與自動聲光模組，利用生命探測模組找到病人，可讓病人使用智能車攜帶的醫療用品，如果量測到病人體溫有發燒的情況，此時智能車就透過主動通報模組，讓家屬或醫護人員知道；也可隨時進行居家的消毒作業。</P>
+              <p><span style="font-weight: bold;">設計原理：</span>我們的作品分成兩大必要裝置：<span style="color: red;">行動裝置</span>與<span style="color: red;">Arduino感測裝置</span>，行動裝置就是機器人行動模組，其他各項模組都屬於後者。
+            </p>
             </div>
             <div class="Mod1Part" id="Mod1Part">
               <p style="font-size: 24px; font-weight: bold;">生命探測模組</p>
@@ -132,13 +135,14 @@
             </div>
             <div class="Mod2Part" id="Mod2Part">
               <p style="font-size: 24px; font-weight: bold;">自動聲光模組</p>
+              <p>警報聲和音樂是來自<span style="color:red">蜂鳴器</span>，分為有源和無源兩種，我們的擴展板用的是<span style="color:red">有源蜂鳴器</span>，內部帶震盪源，所以只要<span style="color:red">一通電就會發聲</span>。</p>
               <button class="btn buttonGroupA-1" onclick="mod2A_Show(this)">自動發出閃燈信號</button>
               <button class="btn buttonGroupA-1" onclick="mod2B_Show(this)">語音訊息自動發出</button>
               <button class="btn buttonGroupA-1" onclick="mod2C_Show(this)">播放音樂提醒</button>
               <div class="card card-outline mod2 mod2A" style="display:none">
                 <div class="card-header">自動發出閃燈信號</div>
                 <div class="card-body">
-                  <p>利用碰撞傳感器</p>
+                  <span style="color:red"></span>
                   <button class="btn buttonGroupA-1" onclick="mod2Aa_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod2Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
@@ -146,7 +150,7 @@
               <div class="card card-outline mod2 mod2B" style="display:none">
                 <div class="card-header">語音訊息發出方法</div>
                 <div class="card-body">
-                  <p>GY-906</p>
+                  <p>為了讓智能車能說話，我們加入了中文<span style="color:red">語音合成</span>模塊SYN6288，就能用語音來提醒吃藥和說明用藥須知。</p>
                   <button class="btn buttonGroupA-1" onclick="mod2Ba_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod2Ba" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
@@ -161,7 +165,7 @@
               </div>
             </div>
             <div class="Mod3Part" id="Mod3Part">
-              <p style="font-size: 24px; font-weight: bold;">自動聲光模組</p>
+              <p style="font-size: 24px; font-weight: bold;">消毒模組</p>
               <button class="btn buttonGroupA-1" onclick="mod3A_Show(this)">用紫外線進行消毒</button>
               <button class="btn buttonGroupA-1" onclick="mod3B_Show(this)">定時開關設定時間</button>
               <button class="btn buttonGroupA-1" onclick="mod3C_Show(this)">(保留或捨棄本按鈕)</button>
