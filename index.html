@@ -160,7 +160,8 @@
               <div class="card card-outline mod2 mod2C" style="display:none">
                 <div class="card-header">播放音樂提醒吃藥</div>
                 <div class="card-body">
-                  <p>BlutThooototh</p>
+                  <p>改良蜂鳴器單調的聲響，寫入撥放音樂(巴哈的小步舞曲)的程式，結合聲光效果，增加創意驚喜。</p>
+                  <p>我們組員都擅長樂理和演奏樂器，想到可以利用MiDi音高頻率和對應的節拍編寫巴哈小步舞曲的音樂檔案如表5-1，就可以奏出：So Do Re Mi Fa So Do Do等音符；其中音高的0，1，2，3，4，5，6，7，8分別代表3B， 4C， 4D， 4E， 4F， 4G， 4A， 4B， 5C九個音名，計算對應的pitch (p值) ；節拍的1， 2， 3分別代表半拍，1拍， 1拍半， 2拍， 2拍半和三拍。</p>
                   <button class="btn buttonGroupA-1" onclick="mod2Ca_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod2Ca" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
@@ -168,36 +169,83 @@
             </div>
             <div class="Mod3Part" id="Mod3Part">
               <p style="font-size: 24px; font-weight: bold;">消毒模組</p>
-              <button class="btn buttonGroupA-1" onclick="mod3A_Show(this)">用紫外線進行消毒</button>
-              <button class="btn buttonGroupA-1" onclick="mod3B_Show(this)">定時開關設定時間</button>
-              <button class="btn buttonGroupA-1" onclick="mod3C_Show(this)">(保留或捨棄本按鈕)</button>
+              <p>消毒模組原本都是利用另一台智能車來設計消毒功能。</p>
+              <button class="btn buttonGroupA-1" onclick="mod3A_Show(this)">紫外燈管說明</button>
+              <button class="btn buttonGroupA-1" onclick="mod3B_Show(this)">進行酵母菌消毒</button>
+              <button class="btn buttonGroupA-1" onclick="mod3C_Show(this)">定時開關設定時間</button>
               <div class="card card-outline mod3 mod3A" style="display:none">
-                <div class="card-header">自動發出閃燈信號</div>
+                <div class="card-header">紫外燈管說明</div>
                 <div class="card-body">
-                  <p>利用碰撞傳感器</p>
+                  <p>所有紫外線相關實驗用到的紫外燈管均為飛利浦公司製作，荷蘭生產，選擇4W原因除了方便攜帶和改造，也是因為輕巧可放入智能車，其他的因為使用110V和燈管太長，所以無法在這次實驗中使用。</p>
                   <button class="btn buttonGroupA-1" onclick="mod3Aa_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod3Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
               </div>
               <div class="card card-outline mod3 mod3B" style="display:none">
-                <div class="card-header">語音訊息發出方法</div>
+                <div class="card-header">酵母菌消毒過程與結果</div>
                 <div class="card-body">
-                  <p>GY-906</p>
+                  <p>依照UVGI技術查紫外線-C(UV-C)對各種細菌、病毒的致死劑量，｛K(殺菌劑量-μWSec/cm2)＝I(強度μW/cm2)*t(時間-sec)｝實驗使用為麵包酵母菌，劑量達到8800(µWSec/cm2) 酵母菌就會致死，由販賣紫外線的店家所做劑量測試圖5-18 [20]，在25cm照射下即有1311.8(µWSec/cm2)，我們測試時在1cm距離下，燈管長15cm，另外燈罩內部使用對紫外線反射率高材料光面錫箔紙，紫外線照射面積為15cm2。我們使用他牌測試紫外線能量數據[21]與實驗的PHILIPS UVC T5，用excel內建趨勢線計算。在1cm距離，照射角度為90度，酵母菌遭受到的紫外線劑量已達9000(µWSec/cm2)，如表5-9圖5-18，所以實驗酵母菌均全數死亡圖5-19 [22]。</p>
                   <button class="btn buttonGroupA-1" onclick="mod3Ba_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod3Ba" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
               </div>
               <div class="card card-outline mod3 mod3C" style="display:none">
-                <div class="card-header">播放音樂提醒吃藥</div>
+                <div class="card-header">定時開關設定時間</div>
                 <div class="card-body">
-                  <p>BlutThooototh</p>
+                  <p>在車上加裝紫外線如表5-8和定時開關，就可以達到在屋內定時消毒的效果。</p>
+                  <p>定時器加紫外線接法，一開始不懂導致燈組燒壞，後來因為持續接錯，最後定時器損壞，直到最後經老師建議後和幫忙後，才順利完成定時開關設定，然後進行後續實驗。</p>
                   <button class="btn buttonGroupA-1" onclick="mod3Ca_Show(this)">(保留或捨棄本按鈕)</button>
                   <p class="mod3Ca" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
                 </div>
               </div>
             </div>
             <div class="Mod4Part" id="Mod4Part">
-              <p></p>
+              <p style="font-size: 24px; font-weight: bold;">機器人行動模組</p>
+              <p>1. 智能車可以<span style="color: red;">循跡</span>和在迷宮中自動<span style="color: red;">迴避障礙</span>，經由生命探測模組直到找到病人或行動不便者。或者是使用<span style="color: red;">藍牙遙控</span>功能來直接控制車子的行動。</p>
+              <p>2. 智能車是自動控制很好的工具，透過馬達驅動器，控制二個直流馬達正反轉，可以成為行動自如的載具。</p>
+              <p style="font-weight: bold; color: orangered; font-size: 20px;">基於這樣的認知，小組開始蒐集資料，並上網購買有關Arduino智能車模組進行研究。</p>
+              <p>此系統只具備基本感測器（紅外線、超音波），提供如循跡及簡單避障等功能。我們充分利用現有的元件功能，並多次改良，最後開發出了<span style="font-weight: bold;">循跡</span>、<span style="font-weight: bold;">避障</span>和<span style="font-weight: bold;">遙控</span>三種功能。</p>
+              <button class="btn buttonGroupA-1" onclick="mod4A_Show(this)">循跡</button>
+              <button class="btn buttonGroupA-1" onclick="mod4B_Show(this)">避障走迷宮</button>
+              <button class="btn buttonGroupA-1" onclick="mod4C_Show(this)">藍牙遙控</button>
+              <div class="card card-outline mod4 mod4A" style="display:none">
+                <div class="card-header">循跡說明</div>
+                <div class="card-body">
+                  <p>智能車不但具會循著固定軌跡走(例如在地面上畫黑色的線條或有固定的圍牆)的裝置，學習現在醫院地上都貼有各種顏色的線，例如跟著綠線走，就可以到小兒科等。</p>
+                  <p><span style="font-size: 24px; color: magenta;">進階應用：</span>如果在家中我們可以在線到達某一個空間時，以斷線編碼來代表位置，以下舉例：</p>
+                  <p>到達客廳時，用4個短斷線代表這是客廳</p>
+                  <p>用3短一長代表現在的空間是廚房</p>
+                  <p style="font-weight: bold;">這就是十字定位法，除了可以識別空間以外，還可以把每次吃藥時間都在哪個空間發現病人傳回伺服器，<span style="color: red">時間久了，也許還可以推斷病人的生活習性。</span></p>
+                  <button class="btn buttonGroupA-1" onclick="mod4Aa_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod4Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod4 mod4B" style="display:none">
+                <div class="card-header">避障走迷宮說明</div>
+                <div class="card-body">
+                  <p style="color: rgb(255, 115, 0);">在未知的且充滿障礙物的空間中具有智慧的找到病人就像是要破解黑暗中的迷宫。</p>
+                  <p>這需要<span style="color: red;">軟體的演算法</span>與<span style="color: red;">硬體精確的方向感</span>配合才能達成。也希望能用<span style="color: red;">藍牙遙控搭配視覺影像</span>的輔助來移動。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod4Ba_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod4Ba" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod4 mod4C" style="display:none">
+                <div class="card-header">藍牙遙控說明</div>
+                <div class="card-body">
+                  <p>智能車如果以無線方式連接，例如藍牙，或Wi-Fi，就可以成為遠端無線遙控智能車。</p>
+                  <p>藍牙介面可將智能車與手機行動裝置互連，並將手機上的指令傳送給智能車，也能將智能車上的結果顯示在手機的藍牙介面上，像是增加鍵盤與顯示螢幕一樣的方便測試與除錯的主要介面。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod4Ca_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod4Ca" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <p>為完成智能車行動模組，主要採用以下步驟：</p>
+              <ol>
+                <li>安裝車架與馬達：用舊有的車改裝，只保留車架輪子與馬達。</li>
+                <li>連接擴展板：將Arduino板連接擴展板固定到車架上。</li>
+                <li>連接電力：將電池座固定到車子的後座。</li>
+                <li>行動功能測試：包含直線與轉彎，以及調整轉彎時間和角度。</li>
+                <li>修正功能測試：我們用左右超音波做修正，接近到牆時會自動微調等修正功能。</li>
+              </ol>
             </div>
             <div class="Mod5Part" id="Mod5Part">
               <p></p>
@@ -270,15 +318,6 @@
       buttonObj.className = 'btn buttonGroupA-1';
     } else {
       $('.mod1Ca_1').slideDown(500);
-      buttonObj.className = 'btn buttonGroupA-2';
-    }
-  }
-  function mod1Ca_2_Show(buttonObj) {
-    if ($('.mod1Ca_2').is(':visible')) {
-      $('.mod1Ca_2').slideUp(500);
-      buttonObj.className = 'btn buttonGroupA-1';
-    } else {
-      $('.mod1Ca_2').slideDown(500);
       buttonObj.className = 'btn buttonGroupA-2';
     }
   }
@@ -434,6 +473,61 @@
       buttonObj.className = 'btn buttonGroupA-1';
     } else {
       $('.mod3Ac').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+
+  function mod4A_Show(buttonObj) {
+    if ($('.mod4A').is(':visible')) {
+      $('.mod4A').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4A').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod4B_Show(buttonObj) {
+    if ($('.mod4B').is(':visible')) {
+      $('.mod4B').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4B').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod4C_Show(buttonObj) {
+    if ($('.mod4C').is(':visible')) {
+      $('.mod4C').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4C').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod4Aa_Show(buttonObj) {
+    if ($('.mod4Aa').is(':visible')) {
+      $('.mod4Aa').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4Aa').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod4Ba_Show(buttonObj) {
+    if ($('.mod4Ba').is(':visible')) {
+      $('.mod4Ba').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4Ba').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod4Ca_Show(buttonObj) {
+    if ($('.mod4Ca').is(':visible')) {
+      $('.mod4Ca').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod4Ca').slideDown(500);
       buttonObj.className = 'btn buttonGroupA-2';
     }
   }
