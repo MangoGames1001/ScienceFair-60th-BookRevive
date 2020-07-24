@@ -250,15 +250,25 @@
   font-size: 16px;
   background-color: yellow;
 }
+.wrapper .SubTitle3 .Mod5Part .card{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: green solid 2px;
+}
 .wrapper .SubTitle3 .Mod5Part .card-header{
   color: black;
   font-size: 16px;
-  background-color: lightblue;
+  background-color: lightgreen;
+}
+.wrapper .SubTitle3 .Mod6Part .card{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: darkgray solid 2px;
 }
 .wrapper .SubTitle3 .Mod6Part .card-header{
   color: black;
   font-size: 16px;
-  background-color: lightblue;
+  background-color: lightgray;
 }
 
 .SubTitle1 h2{

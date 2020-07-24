@@ -248,10 +248,72 @@
               </ol>
             </div>
             <div class="Mod5Part" id="Mod5Part">
-              <p></p>
+              <p style="font-size: 24px; font-weight: bold;">主動通報模組</p>
+              <p>警報聲和音樂是來自<span style="color:red">蜂鳴器</span>，分為有源和無源兩種，我們的擴展板用的是<span style="color:red">有源蜂鳴器</span>，內部帶震盪源，所以只要<span style="color:red">一通電就會發聲</span>。</p>
+              <p>我們設計有源蜂鳴器設定為<span style="color:red">每一秒內打開蜂鳴器，50 ms 後關閉蜂鳴器</span>，就持續維持發聲可以<span style="color:red">讓視障者聽見警報聲響</span>。</p>
+              <button class="btn buttonGroupA-1" onclick="mod5A_Show(this)">Wi-Fi無線電信號</button>
+              <button class="btn buttonGroupA-1" onclick="mod5B_Show(this)">Line通知傳遞重要訊息</button>
+              <button class="btn buttonGroupA-1" onclick="mod5C_Show(this)">(保留或捨棄本按鈕))</button>
+              <div class="card card-outline mod5 mod5A" style="display:none">
+                <div class="card-header">自動發出閃燈信號</div>
+                <div class="card-body">
+                  <p>為<span style="color:red">提醒病人</span>送藥時間已到，並準備拿藥，系統安裝LED燈，以營造酷炫的燈光特效</p>
+                  <p>LED燈發出的光亮可以讓聽障者看見有<span style="color:red">警示作用</span>。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod5Aa_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod5Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod5 mod5B" style="display:none">
+                <div class="card-header">語音訊息發出方法</div>
+                <div class="card-body">
+                  <p>為了讓智能車能說話，我們加入了中文<span style="color:red">語音合成</span>模塊SYN6288，就能用語音來提醒吃藥和說明用藥須知。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod5Ba_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod5Ba" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod5 mod5C" style="display:none">
+                <div class="card-header">播放音樂提醒吃藥</div>
+                <div class="card-body">
+                  <p>改良蜂鳴器單調的聲響，寫入撥放音樂(巴哈的小步舞曲)的程式，結合聲光效果，增加創意驚喜。</p>
+                  <p>我們組員都擅長樂理和演奏樂器，想到可以利用MiDi音高頻率和對應的節拍編寫巴哈小步舞曲的音樂檔案如表5-1，就可以奏出：So Do Re Mi Fa So Do Do等音符；其中音高的0，1，2，3，4，5，6，7，8分別代表3B， 4C， 4D， 4E， 4F， 4G， 4A， 4B， 5C九個音名，計算對應的pitch (p值) ；節拍的1， 2， 3分別代表半拍，1拍， 1拍半， 2拍， 2拍半和三拍。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod5Ca_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod5Ca" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
             </div>
             <div class="Mod6Part" id="Mod6Part">
-              <p></p>
+              <p style="font-size: 24px; font-weight: bold;">視覺影像模組</p>
+              <p>警報聲和音樂是來自<span style="color:red">蜂鳴器</span>，分為有源和無源兩種，我們的擴展板用的是<span style="color:red">有源蜂鳴器</span>，內部帶震盪源，所以只要<span style="color:red">一通電就會發聲</span>。</p>
+              <p>我們設計有源蜂鳴器設定為<span style="color:red">每一秒內打開蜂鳴器，50 ms 後關閉蜂鳴器</span>，就持續維持發聲可以<span style="color:red">讓視障者聽見警報聲響</span>。</p>
+              <button class="btn buttonGroupA-1" onclick="mod6A_Show(this)">即時傳輸視覺影像</button>
+              <button class="btn buttonGroupA-1" onclick="mod6B_Show(this)">具有人臉辨識功能</button>
+              <button class="btn buttonGroupA-1" onclick="mod6C_Show(this)">(保留或捨棄本按鈕))</button>
+              <div class="card card-outline mod6 mod6A" style="display:none">
+                <div class="card-header">自動發出閃燈信號</div>
+                <div class="card-body">
+                  <p>為<span style="color:red">提醒病人</span>送藥時間已到，並準備拿藥，系統安裝LED燈，以營造酷炫的燈光特效</p>
+                  <p>LED燈發出的光亮可以讓聽障者看見有<span style="color:red">警示作用</span>。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod6Aa_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod6Aa" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod2 mod2B" style="display:none">
+                <div class="card-header">語音訊息發出方法</div>
+                <div class="card-body">
+                  <p>為了讓智能車能說話，我們加入了中文<span style="color:red">語音合成</span>模塊SYN6288，就能用語音來提醒吃藥和說明用藥須知。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod6Ba_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod6Ba" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
+              <div class="card card-outline mod2 mod2C" style="display:none">
+                <div class="card-header">播放音樂提醒吃藥</div>
+                <div class="card-body">
+                  <p>改良蜂鳴器單調的聲響，寫入撥放音樂(巴哈的小步舞曲)的程式，結合聲光效果，增加創意驚喜。</p>
+                  <p>我們組員都擅長樂理和演奏樂器，想到可以利用MiDi音高頻率和對應的節拍編寫巴哈小步舞曲的音樂檔案如表5-1，就可以奏出：So Do Re Mi Fa So Do Do等音符；其中音高的0，1，2，3，4，5，6，7，8分別代表3B， 4C， 4D， 4E， 4F， 4G， 4A， 4B， 5C九個音名，計算對應的pitch (p值) ；節拍的1， 2， 3分別代表半拍，1拍， 1拍半， 2拍， 2拍半和三拍。</p>
+                  <button class="btn buttonGroupA-1" onclick="mod6Ca_Show(this)">(保留或捨棄本按鈕)</button>
+                  <p class="mod6Ca" style="display: none;">*Detected Suspicious Virus It has to be DELETED Right NOW!*</p>
+                </div>
+              </div>
             </div>
             <div class="PicOfMods">
               <p>本研究六大模組功能簡介與對照表</p>
@@ -528,6 +590,116 @@
       buttonObj.className = 'btn buttonGroupA-1';
     } else {
       $('.mod4Ca').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+
+  function mod5A_Show(buttonObj) {
+    if ($('.mod5A').is(':visible')) {
+      $('.mod5A').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5A').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod5B_Show(buttonObj) {
+    if ($('.mod5B').is(':visible')) {
+      $('.mod5B').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5B').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod5C_Show(buttonObj) {
+    if ($('.mod5C').is(':visible')) {
+      $('.mod5C').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5C').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod5Aa_Show(buttonObj) {
+    if ($('.mod5Aa').is(':visible')) {
+      $('.mod5Aa').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5Aa').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod5Ba_Show(buttonObj) {
+    if ($('.mod5Ba').is(':visible')) {
+      $('.mod5Ba').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5Ba').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod5Ca_Show(buttonObj) {
+    if ($('.mod5Ca').is(':visible')) {
+      $('.mod5Ca').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod5Ca').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+
+  function mod6A_Show(buttonObj) {
+    if ($('.mod6A').is(':visible')) {
+      $('.mod6A').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6A').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod6B_Show(buttonObj) {
+    if ($('.mod6B').is(':visible')) {
+      $('.mod6B').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6B').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod6C_Show(buttonObj) {
+    if ($('.mod6C').is(':visible')) {
+      $('.mod6C').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6C').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod6Aa_Show(buttonObj) {
+    if ($('.mod6Aa').is(':visible')) {
+      $('.mod6Aa').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6Aa').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod6Ba_Show(buttonObj) {
+    if ($('.mod6Ba').is(':visible')) {
+      $('.mod6Ba').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6Ba').slideDown(500);
+      buttonObj.className = 'btn buttonGroupA-2';
+    }
+  }
+  function mod6Ca_Show(buttonObj) {
+    if ($('.mod6Ca').is(':visible')) {
+      $('.mod6Ca').slideUp(500);
+      buttonObj.className = 'btn buttonGroupA-1';
+    } else {
+      $('.mod6Ca').slideDown(500);
       buttonObj.className = 'btn buttonGroupA-2';
     }
   }
