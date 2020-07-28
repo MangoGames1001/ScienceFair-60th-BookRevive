@@ -232,7 +232,7 @@
               <div class="card card-outline mod5 mod5A" style="display:none">
                 <div class="card-header">Wi-Fi無線電信號</div>
                 <div class="card-body">
-                  <p>不知道要打什麼..</p>
+                  <p>我們的系統需要在固定的時間啟動，但是Arduino主板並沒有時鐘(RealTimeClock)的功能，那要如何知道目前的時間？最先想到的方法就是找一個RTC的時鐘模組來用。後來我們找到一種利用已經安裝的Wi-Fi元件，透過網路連上國家時間與頻率標準實驗室的NTP Server校時方法。經過不斷的嘗試才連上NTP Server，但卻沒有回傳時間資料，直到測試watch.stdtime.gov.tw這個NTP Server才發現是可行的。再經過不停的測試與網路延時校正，得到以下誤差約在一秒內的結果。</p>
                 </div>
               </div>
               <div class="card card-outline mod5 mod5B" style="display:none">
@@ -271,7 +271,8 @@
               <div class="card card-outline mod6 mod6B" style="display:none">
                 <div class="card-header">具有人臉辨識功能</div>
                 <div class="card-body">
-                  <p>還沒打好。</p>
+                  <p>為了得到清晰的影像，我們調整不同的解析度，原本我們的鏡頭是200萬畫數，因有部分影像不清楚，我們後期還會新增有夜視鏡頭來測試，補足晚上燈光不足而無法錄製影像，希望能在光線不足時也可以運作。</p>
+                  <p>距離人臉60公分是偵測的適當距離。實驗中，我們以一張"手握著拳頭的嬰兒(握拳寶寶)"來儲存，照7張臉後，給他其他的臉。結果：<span style="color: red;">基本上都測得到，人臉距離和比例會影響偵測。</span></p>
                 </div>
               </div>
             </div>
